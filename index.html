@@ -707,14 +707,14 @@
 						zoom: 12,
 						center: new google.maps.LatLng(23.135165, -82.369966),
 						mapTypeControlOptions: {
-							mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+							mapTypeIds: [google.maps.MapTypeId.ROADMAP]
 						}
 					}
 					var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 					//Associate the styled map with the MapTypeId and set it to display.
-					map.mapTypes.set('map_style', styledMap);
-					map.setMapTypeId('map_style');
+					//map.mapTypes.set('map_style', styledMap);
+					//map.setMapTypeId('map_style');
 
 					setMarkers(map, places);
 				}
@@ -776,7 +776,9 @@
 
 			<div id="rsvp" class="text-center" data-scroll-reveal>
 				<div class="heading">
-					<h2>RSVP</h2>
+					<div class="secretclass">
+						<h2>RSVP</h2>
+					</div>
 					<p><span></span><i class="fa fa-heart"></i><span></span></p>
 				</div>
 				<form role="form" name="contactform" action="process.php">
@@ -821,49 +823,14 @@
 
 		</section>
 
-		<!-- ========== REGISTRY START ========== -->
-
-		<section id="registry">
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-sm-12" data-scroll-reveal>
-						<p>We are registered at</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 owl-carousel" data-scroll-reveal>
-						<div class="item">
-							<a href=""><span></span><img src="http://placehold.it/130x50.png" class="img-responsive" alt="" /></a>
-						</div>
-						<div class="item">
-							<a href=""><span></span><img src="http://placehold.it/130x50.png" class="img-responsive" alt="" /></a>
-						</div>
-						<div class="item">
-							<a href=""><span></span><img src="http://placehold.it/130x50.png" class="img-responsive" alt="" /></a>
-						</div>
-						<div class="item">
-							<a href=""><span></span><img src="http://placehold.it/130x50.png" class="img-responsive" alt="" /></a>
-						</div>
-						<div class="item">
-							<a href=""><span></span><img src="http://placehold.it/130x50.png" class="img-responsive" alt="" /></a>
-						</div>
-						<div class="item">
-							<a href=""><span></span><img src="http://placehold.it/130x50.png" class="img-responsive" alt="" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ========== REGISTRY END ========== -->
-
+		
 		<!-- ========== FOOTER START ========== -->
 
 		<footer>
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12" data-scroll-reveal>
-						&copy; 2014 Perfect Couple - Premium Site Theme by <a href="http://themeforest.net/user/Coffeecream/portfolio" target="_blank">Coffeecream Themes</a>
+						&copy; Marc-Olivier Arsenault 2015 - Theme by Theme Forest.
 					</div>
 				</div>
 			</div>
