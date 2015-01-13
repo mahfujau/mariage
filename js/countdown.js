@@ -22,11 +22,11 @@ var CountdownWidth = 200;
 var CountdownHeight = 30;
 
 var CountdownLabels = {
-	second 	: "SECONDS",
+	second 	: "SECONDES",
 	minute 	: "MINUTES",
-	hour	: "HOURS",
-	day 	: "DAYS",
-	month 	: "MONTHS",
+	hour	: "HEURES",
+	day 	: "JOURS",
+	month 	: "MOIS",
 	year 	: "YEARS"	
 };
 
