@@ -1,6 +1,6 @@
 <?php
 
-$send_to = 'youremail@gmail.com';
+$send_to = 'marcolivier.arsenault@gmail.com,gosselin720@gmail.com';
 
 $errors         = array();  	// array to hold validation errors
 $data 			= array(); 		// array to pass back data
@@ -38,11 +38,13 @@ $data 			= array(); 		// array to pass back data
 
 Email: ' . $_POST['inputEmail'] . '
 
+Phone: ' . $_POST['inputPhone'] . '
+
 Guests: ' . $_POST['selectGuests'] . '
 
 Attending: ' . $_POST['selectAttending'];
 
-        	$headers = 'From: RSVP Form' . '<' . $send_to . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
+        	$headers = 'From: MARIAGE RSVP' . '<' . 'mariage@etouionsemarie.ca' . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
 
         	mail($send_to, $subject, $message, $headers);
 
@@ -50,7 +52,7 @@ Attending: ' . $_POST['selectAttending'];
 
 		// show a message of success and provide a true success variable
 		$data['success'] = true;
-		$data['message'] = 'Thank you!';
+		$data['message'] = 'Merci!';
 	}
 
 	// return all our data to an AJAX call
