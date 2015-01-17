@@ -47,6 +47,8 @@ Attending: ' . $_POST['selectAttending'];
         	$headers = 'From: MARIAGE RSVP' . '<' . 'mariage@etouionsemarie.ca' . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
 
         	mail($send_to, $subject, $message, $headers);
+			
+			mail($_POST['inputEmail'], "Confirmation Mariage Marco et Mireille", "Merci nous avons bien reçu votre confirmation.", "From: Mariage <mariage@etouionsemarie.ca>");
 
     	}
 
