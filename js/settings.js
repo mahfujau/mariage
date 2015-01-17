@@ -85,16 +85,16 @@
 	           var bh = $(window).height();
 	           var st = $(window).scrollTop();
 	           var el = $('.timer');
-	           var eh = el.height();
-	           if ( st >= (100 + eh) - bh ) {
+	           var eh = el.offset().top;		
+	           if ( st >= ((100 + eh) - bh) ) {
 	               el.countTo({
 	                   speed: 2000,
 	                   refreshInterval: 20
-	               });
+	               	   });
+	               flag = 1;
+	           	}
 	           }
-	           flag = 1;
-	        }
-	    });
+	         });
 
 		// ====================================================================
 
