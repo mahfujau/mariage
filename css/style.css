@@ -376,7 +376,7 @@ section {
 }
 
 #facts .parallax {
-	background: url(http://placehold.it/1600x1600.jpg);
+	background: url(../images/b1.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
