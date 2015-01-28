@@ -50,7 +50,7 @@ Attending: ' . $_POST['selectAttending'];
 
         	mail($send_to, $subject, $message, $headers);
 			
-			mail($_POST['inputEmail'], "Confirmation Mariage Marco et Mireille", "Merci nous avons bien reçu votre confirmation.", "From: Mariage <mariage@etouionsemarie.ca>");
+			mail($_POST['inputEmail'], "Confirmation Mariage Marco et Mireille", "Merci nous avons bien re&ccedilu votre confirmation.", "From: Mariage <mariage@etouionsemarie.ca>");
 
     	}
 
