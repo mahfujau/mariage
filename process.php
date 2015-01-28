@@ -40,6 +40,8 @@ Email: ' . $_POST['inputEmail'] . '
 
 Phone: ' . $_POST['inputPhone'] . '
 
+Alergie: ' . $_POST['inputAlergie'] . '
+
 Guests: ' . $_POST['selectGuests'] . '
 
 Attending: ' . $_POST['selectAttending'];

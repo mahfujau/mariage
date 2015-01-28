@@ -14,7 +14,8 @@ $(document).ready(function() {
 			'inputEmail' 			: $('input[name=inputEmail]').val(),
 			'inputPhone' 			: $('input[name=inputPhone]').val(),
 			'selectGuests' 	        : $('select[name=selectGuests]').val(),
-			'selectAttending' 	    : $('select[name=selectAttending]').val()
+			'selectAttending' 	    : $('select[name=selectAttending]').val(),
+			'inputAlergie' 			: $('input[name=inputAlergie]').val()
 		};
 
 		// process the form
