@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain; charset=utf-8');
 
 $send_to = 'marcolivier.arsenault@gmail.com,gosselin720@gmail.com';
 
@@ -50,7 +51,7 @@ Attending: ' . $_POST['selectAttending'];
 
         	mail($send_to, $subject, $message, $headers);
 			
-			mail($_POST['inputEmail'], "Confirmation Mariage Marco et Mireille", "Merci nous avons bien re&ccedilu votre confirmation.", "From: Mariage <mariage@etouionsemarie.ca>");
+			mail($_POST['inputEmail'], "Confirmation Mariage Marco et Mireille", "Merci nous avons bien reçu votre confirmation.", "From: Mariage <mariage@etouionsemarie.ca>");
 
     	}
 
