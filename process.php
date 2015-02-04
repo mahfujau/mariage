@@ -1,7 +1,8 @@
 <?php
 header('Content-type: text/plain; charset=utf-8');
 
-$send_to = 'marcolivier.arsenault@gmail.com,gosselin720@gmail.com';
+//$send_to = 'marcolivier.arsenault@gmail.com,gosselin720@gmail.com';
+$send_to = 'marcolivier.arsenault@gmail.com';
 
 $errors         = array();  	// array to hold validation errors
 $data 			= array(); 		// array to pass back data
